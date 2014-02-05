@@ -301,10 +301,12 @@ a.button:hover {
 
 #tech-heading {
   text-align: center; }
+  #tech-heading.gray {
+    padding-bottom: 40px; }
   #tech-heading h1 {
     color: #404041;
     font-size: 24px;
-    margin: 20px 0 5px 0;
+    margin: 0px 0 5px 0;
     font-weight: normal;
     line-height: 100%; }
   #tech-heading p {
@@ -497,12 +499,14 @@ footer {
     .page ul.apps li div.top {
       padding: 18px;
       border-bottom: 2px solid #f1f1f2; }
-    .page ul.apps li a.video {
+    .page ul.apps li a.video, .page ul.apps li .no-video {
       display: block;
       margin-bottom: 18px;
       position: relative; }
     .page ul.apps li a:hover {
       border-bottom: none; }
+    .page ul.apps li .no-video a:hover {
+      cursor: default; }
     .page ul.apps li span.play {
       width: 37px;
       height: 37px;
@@ -536,6 +540,34 @@ footer {
       background: #45a9e3 url("../img/github.png") left no-repeat; }
       .page ul.apps li a.github:hover {
         background-color: #207BAF; }
+      .page ul.apps li a.github.inactive {
+        background-color: #e3e3e3; }
+        .page ul.apps li a.github.inactive:hover {
+          background-color: #e3e3e3; }
+
+#chrome-warning {
+  width: 400px;
+  padding: 50px;
+  position: relative;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 6px; }
+  #chrome-warning p {
+    margin-bottom: 30px; }
+  #chrome-warning a.exit {
+    position: absolute;
+    top: 8px;
+    right: 15px; }
+    #chrome-warning a.exit:hover {
+      border-bottom: 0; }
+  #chrome-warning a.download {
+    padding: 15px;
+    color: #fff;
+    background-color: #45aae4;
+    border-radius: 4px; }
+    #chrome-warning a.download:hover {
+      border-bottom: 0;
+      background-color: #207BAF; }
 
 div.video-overlay {
   display: none;
